@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS favorites (id varchar(16) PRIMARY KEY, set_id VARCHAR(16), FOREIGN KEY(set_id) REFERENCES sets(set_num) CONSTRAINT unique_set_id UNIQUE (set_id));
